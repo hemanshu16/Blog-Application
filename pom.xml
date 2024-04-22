@@ -81,7 +81,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
         </plugins>
-        <finalName>BlogApplication</finalName>
+        <finalName>blog</finalName>
     </build>
 
 </project>
