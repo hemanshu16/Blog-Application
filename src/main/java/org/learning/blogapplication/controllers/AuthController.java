@@ -37,7 +37,6 @@ public class AuthController {
 
     @PostMapping("/login")
     public JwtResponseDto AuthenticateAndGetToken(@RequestBody AuthRequestDto authRequestDTO){
-        System.out.println("DOne done done \n\n");
         Authentication authentication = null;
         try {
             authentication = authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(authRequestDTO.getUsername(), authRequestDTO.getPassword()));
