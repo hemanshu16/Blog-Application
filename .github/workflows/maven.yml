@@ -32,7 +32,7 @@ jobs:
       run: mvn -B package --file pom.xml
 
     - name: build docker file
-      run: docker build -t "BlogApplication" .
+      run: docker build -t blogapplication .
 
     - name: log images
       run: docker images
